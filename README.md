@@ -35,5 +35,17 @@ datas_apos_2025 = datas_lista.filter((data) => {
   ano = parseInt(resultado[0], 10)
   return ano > 2025; 
 })
+```
 
+## Uso de .reduce() no JS
+
+Por último, mas não menos importante, há um método chamado `.reduce()`. Ele pega cada item e "acumula" valores da lista retornados por sua função de callback, desde que você use a variável acumuladora. Geralmente, nós usamos para somar itens da lista, resultando em um número só, por isso o nome do método é "reduce".
+
+Nosso último exemplo de uso de hoje:
+
+```
+const notas = [93, 100, 80, 87]
+
+soma_notas = notas.reduce((nota_somada, nota_atual) => nota_somada + nota_atual, 0)
+media = soma_notas/notas.length
 ```
